@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="928.0" style="-fx-background-color: #002A64; -fx-border-color: FFBF67; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controlladorMain">
+   <center>
+      <ImageView fitHeight="301.0" fitWidth="585.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cinegift.gif" />
+         </image>
+      </ImageView>
+   </center>
+   <top>
+      <HBox alignment="CENTER" spacing="25.0" style="-fx-background-color: #0187C6;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#volverInicio" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: FF9F1C;" text="Inicio">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#abrirCines" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: FF9F1C;" text="Cines">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: FF9F1C;" text="Peliculas">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <MenuButton mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: FF9F1C;" text="Entradas">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#compraEntrada" text="Comprar Entrada" />
+                <MenuItem mnemonicParsing="false" onAction="#entradasHechas" text="Entradas Compradas" />
+              </items>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MenuButton>
+            <Button mnemonicParsing="false" onAction="#abrirTuto" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: FF9F1C;" text="Tutorial">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="15.0" top="15.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>
