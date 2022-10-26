@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="828.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cines.controlladorCine">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" rotateGraphic="true" side="LEFT" style="-fx-background-color: F28451;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab closable="false" text="Orcasitas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="666.0">
+                     <children>
+                        <Hyperlink fx:id="linkOdeon1" layoutX="25.0" layoutY="439.0" onAction="#abrirLink" text="Más de Nosotros..." textFill="#2ddf42" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="20.0" />
+                           </font></Hyperlink>
+                        <ImageView fitHeight="258.0" fitWidth="344.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@ladehesa.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="400.0" layoutY="70.0" prefHeight="509.0" prefWidth="376.0" style="-fx-border-width: 2; -fx-border-color: orange;" text="Estimados espectadores, por causas ajenas &#10;a Cines La Dehesa, el espectáculo Encanto &#10;Hablemos de Bruno, que estaba programado &#10;para el viernes 28 y sábado 29 de octubre &#10;ha sido trasladado a enero. Concretamente &#10;al viernes 27 y sábado 28 de enero, mismas &#10;sesiones.&#10;&#10;Les sirven sus mismas entradas para la &#10;nueva fecha. &#10;&#10;Pero si desean la devolución del importe, &#10;pueden solicitarlo en taquilla si es que &#10;compraron en el cine, o si compraron online, &#10;contestando el correo que han recibido &#10;comunicando el cambio de fecha.&#10;&#10;Rogamos disculpen las molestias.&#10;&#10;">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font></TextArea>
+                        <Label layoutX="25.0" layoutY="300.0" text="Dirección">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="352.0" prefHeight="46.0" prefWidth="303.0" text="Carretera Madrid-Barcelona Kilómetro 34,">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="398.0" text="28801 Alcalá de Henares, Madrid">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="94.0" fitWidth="258.0" layoutX="70.0" layoutY="485.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../Desktop/cineplanet.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="477.0" layoutY="21.0" text="NOVEDADES">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Tres Cantos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="275.0" fitWidth="344.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@tresCantos.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="400.0" layoutY="78.0" prefHeight="500.0" prefWidth="378.0" style="-fx-border-color: orange; -fx-border-width: 2;" text="ODEON EXPERIENCE&#10;Dolby Atmos, el sonido inmersivo total&#10;&#10;Si has visitado una sala de cine de Odeon &#10;Multicines comprobarás lo importante que &#10;es para nosotros la experiencia del sonido. &#10;&#10;Con Dolby Atmos el sonido viene de todas&#10;las direcciones, incluso desde arriba, y &#10;llena el cine con una claridad, una intensidad,&#10;un detalle y una profundidad deslumbrantes. &#10;&#10;Te encontrarás inmerso en la acción de la &#10;película despertando tus sentidos. &#10;&#10;Esperamos que su estancia sea de su agrado">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font></TextArea>
+                        <Label layoutX="23.0" layoutY="309.0" text="Dirección">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="linkOdeon11" layoutX="17.0" layoutY="427.0" onAction="#abrirLink" text="Más de Nosotros..." textFill="#2ddf42" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="20.0" />
+                           </font>
+                        </Hyperlink>
+                        <ImageView fitHeight="94.0" fitWidth="258.0" layoutX="52.0" layoutY="478.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../Desktop/cineplanet.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="23.0" layoutY="362.0" text="Av. de los Labradores 9,">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="394.0" text="28760 Madrid">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="478.0" layoutY="27.0" text="NOVEDADES">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab closable="false" text="Vallecas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="662.0">
+                     <children>
+                        <ImageView fitHeight="272.0" fitWidth="361.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cineVallecas.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="407.0" layoutY="90.0" prefHeight="482.0" prefWidth="366.0" style="-fx-border-width: 2; -fx-border-color: orange;" text="Vallecas conoció en los primeros años &#10;del siglo XX un pequeño cine ambulante &#10;que proyectaba películas sólo los sábados &#10;y domingos. Se llamaba Puente de Vallecas, &#10;y era, como la mayoría de los primeros &#10;recintos cinematográficos, un frágil &#10;barracón de madera, en su caso &#10;transportable.">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font></TextArea>
+                        <Hyperlink fx:id="linkOdeon111" layoutX="21.0" layoutY="449.0" onAction="#abrirLink" text="Más de Nosotros..." textFill="#2ddf42" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="20.0" />
+                           </font>
+                        </Hyperlink>
+                        <Label layoutX="19.0" layoutY="382.0" prefHeight="19.0" prefWidth="187.0" text="C. Adolfo Bioy Casares 2,">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="19.0" layoutY="325.0" text="Dirección">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="94.0" fitWidth="258.0" layoutX="64.0" layoutY="487.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../Desktop/cineplanet.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="19.0" layoutY="410.0" prefHeight="19.0" prefWidth="187.0" text="28051 Madrid">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="479.0" layoutY="31.0" text="NOVEDADES">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Callao">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="400.0" layoutY="90.0" prefHeight="482.0" prefWidth="366.0" style="-fx-border-width: 2; -fx-border-color: orange;" text="El Cine Callao es un edificio ubicado en la&#10;madrileña plaza del Callao, primera obra &#10;del arquitecto Luis Gutiérrez Soto, que &#10;la construye en el año 1926. Se encuentra &#10;junto al edificio Carrión, separado del &#10;mismo por la calle Jacometrezo. El edificio &#10;fue inaugurado como sala de cine el 11 de &#10;diciembre de 1926 emitiendo la película &#10;Luis Candelas, el bandido de Madrid. &#10;Estos cines son sede de numerosos estrenos, &#10;premieres y otros eventos. En 2016, por &#10;la celebración de sus 90 años, se celebraron &#10;diversos actos conmemorativos.">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font></TextArea>
+                        <ImageView fitHeight="270.0" fitWidth="349.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@CinesCallao.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="23.0" layoutY="319.0" text="Dirección">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="linkOdeon1111" layoutX="25.0" layoutY="438.0" onAction="#abrirLink" text="Más de Nosotros..." textFill="#2ddf42" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="20.0" />
+                           </font>
+                        </Hyperlink>
+                        <ImageView fitHeight="94.0" fitWidth="258.0" layoutX="68.0" layoutY="476.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../Desktop/cineplanet.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="23.0" layoutY="367.0" prefHeight="19.0" prefWidth="187.0" text="Plaza del Callao 3,">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="23.0" layoutY="395.0" prefHeight="19.0" prefWidth="187.0" text="28013 Madrid">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="472.0" layoutY="29.0" text="NOVEDADES">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Torrejón">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="260.0" fitWidth="345.0" layoutX="28.0" layoutY="22.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@torrejonCine.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="400.0" layoutY="105.0" prefHeight="474.0" prefWidth="366.0" style="-fx-border-color: orange; -fx-border-width: 2;" text="El productor barcelonés Alfredo Matas y &#10;el empresario José Arquer se asociaron para &#10;abrir un lujoso complejo en la Avenida &#10;Diagonal de Barcelona. El Cine Windsor &#10;bar, restaurante y un local en el segundo &#10;piso que acaba convirtiéndose en el primer &#10;teatro de bolsillo de la capital catalana. En &#10;1958 da lugar la aparición del Cinerama, una&#10;enorme pantalla curvada que cubre todo &#10;el campo visual del espectador, ofreciendo &#10;una imagen única en apariencia, pero que &#10;en realidad son tres imágenes unidas &#10;procedentes de otros proyectores que &#10;funcionan sincrónicamente. Matas consiguió&#10;traer este sistema a España y se reforma el &#10;Teatro Nuevo y el Cine Albéniz de Madrid &#10;para adaptarlos a las nuevas especificidades &#10;técnicas. Después de la entrada de diversas &#10;personas en la sociedad, ésta empieza a &#10;llamarse Cinesa.">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font></TextArea>
+                        <Hyperlink fx:id="linkOdeon11111" layoutX="28.0" layoutY="445.0" onAction="#abrirLink" text="Más de Nosotros..." textFill="#2ddf42" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="20.0" />
+                           </font>
+                        </Hyperlink>
+                        <Label layoutX="28.0" layoutY="314.0" text="Dirección">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="372.0" prefHeight="19.0" prefWidth="187.0" text="Avenida Premios Nobel 3,">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="94.0" fitWidth="258.0" layoutX="69.0" layoutY="483.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../Desktop/cineplanet.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="28.0" layoutY="401.0" prefHeight="19.0" prefWidth="248.0" text="28850 Torrejón de Ardoz, Madrid">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="472.0" layoutY="35.0" text="NOVEDADES">
+                           <font>
+                              <Font name="Broadway" size="34.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+   </center>
+</BorderPane>

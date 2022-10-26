@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="647.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="peliculas.controlladorCines">
+   <center>
+      <GridPane gridLinesVisible="true" prefHeight="647.0" prefWidth="831.0" style="-fx-background-color: #002A64;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="254.0" fitWidth="152.0" layoutX="46.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@avatar2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="43.0" layoutY="268.0" text="Avatar 2" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <TreeView fx:id="TreeAvatar" layoutX="226.0" layoutY="26.0" prefHeight="287.0" prefWidth="229.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="254.0" fitWidth="152.0" layoutX="42.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@preyfordevil.jpg" />
+                     </image>
+                  </ImageView>
+                  <TreeView fx:id="treePray" layoutX="223.0" layoutY="28.0" prefHeight="284.0" prefWidth="230.0" />
+                  <Label layoutX="16.0" layoutY="261.0" prefHeight="46.0" prefWidth="203.0" text="Pray For The Devil" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="254.0" fitWidth="152.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wakanda.jpeg" />
+                     </image>
+                  </ImageView>
+                  <TreeView fx:id="treeWak" layoutX="226.0" layoutY="30.0" prefHeight="283.0" prefWidth="230.0" />
+                  <Label layoutX="12.0" layoutY="268.0" text="Wakanda Forever" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="257.0" fitWidth="179.0" layoutX="27.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@blackAdam.jpg" />
+                     </image>
+                  </ImageView>
+                  <TreeView fx:id="treeAdam" layoutX="227.0" layoutY="28.0" prefHeight="285.0" prefWidth="227.0" />
+                  <Label layoutX="29.0" layoutY="264.0" text="Black Adam" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
