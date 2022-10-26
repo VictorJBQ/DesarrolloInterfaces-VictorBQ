@@ -109,7 +109,7 @@ public class controlladorMain implements Initializable{
     }
 
     @FXML
-    void entradasHechas(ActionEvent event) {
+    public void entradasHechas(ActionEvent event) {
     	try {
 			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();

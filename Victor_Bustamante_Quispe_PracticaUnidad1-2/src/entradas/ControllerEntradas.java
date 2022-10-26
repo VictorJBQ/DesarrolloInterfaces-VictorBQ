@@ -1,14 +1,17 @@
 package entradas;
 
 
+import java.io.IOException;
 import java.util.ResourceBundle;
 
 import javax.print.DocFlavor.URL;
 
+import application.controlladorMain;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
@@ -18,9 +21,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.BorderPane;
 
 public class ControllerEntradas implements Initializable{
 
+	private BorderPane rootLayout;
 	@FXML
     private ResourceBundle resources;
 
@@ -37,7 +42,7 @@ public class ControllerEntradas implements Initializable{
 	    private TextField nombre;
 
 	    @FXML
-	    private PasswordField pelicula;
+	    private TextField pelicula;
 	
 	@FXML
     private ChoiceBox<String> choice1;
@@ -89,7 +94,7 @@ public class ControllerEntradas implements Initializable{
 	}
    @FXML
    void generarEntrada(ActionEvent event) {
-	   
+	  
    }
    
    

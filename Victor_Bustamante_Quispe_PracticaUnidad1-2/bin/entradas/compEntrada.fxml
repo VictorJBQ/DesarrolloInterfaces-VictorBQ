@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -70,7 +69,6 @@
                         <Insets />
                      </GridPane.margin>
                   </TextField>
-                  <PasswordField fx:id="pelicula" promptText="(Nombre Pelicula)" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
                   <Slider fx:id="entradas" blockIncrement="1.0" majorTickUnit="1.0" max="30.0" min="1.0" minorTickCount="1" prefHeight="38.0" prefWidth="500.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <children>
@@ -83,6 +81,7 @@
                      </font>
                   </Label>
                   <TextField fx:id="dni" prefHeight="26.0" prefWidth="127.0" promptText="(D.N.I)" GridPane.columnIndex="1" />
+                  <TextField fx:id="pelicula" promptText="(¿Que pelicula quieres ver?)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
