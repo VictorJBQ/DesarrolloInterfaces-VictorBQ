@@ -3,10 +3,12 @@ package application;
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 
 
@@ -27,6 +29,14 @@ public class Main extends Application {
 				Scene scene = new Scene(rootLayout);
 				primaryStage.setResizable(false);
 				primaryStage.getIcons().add(imagen);
+				scene.setOnMouseClicked(
+				        new EventHandler<MouseEvent>() {
+
+				            @Override
+				            public void handle(MouseEvent event) {
+				           System.out.println(event.getPickResult());
+				            }
+				          });
 			        // maximizar la ventana
 				primaryStage.setScene(scene);
 				primaryStage.show();

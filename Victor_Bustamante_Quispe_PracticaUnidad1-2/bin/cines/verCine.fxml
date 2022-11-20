@@ -14,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="828.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cines.controlladorCine">
    <center>
-      <TabPane prefHeight="200.0" prefWidth="200.0" rotateGraphic="true" side="LEFT" style="-fx-background-color: F28451;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+      <TabPane fx:id="tabpane" prefHeight="200.0" prefWidth="200.0" rotateGraphic="true" side="LEFT" style="-fx-background-color: F28451;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
           <Tab closable="false" text="Orcasitas">
             <content>
@@ -24,7 +24,7 @@
                            <font>
                               <Font name="Comic Sans MS Bold Italic" size="20.0" />
                            </font></Hyperlink>
-                        <ImageView fitHeight="258.0" fitWidth="344.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true">
+                        <ImageView fx:id="imagOrca" fitHeight="258.0" fitWidth="344.0" layoutX="25.0" layoutY="21.0" onMouseDragEntered="#agrandamos" onMouseDragExited="#normalidad" pickOnBounds="true">
                            <image>
                               <Image url="@ladehesa.jpg" />
                            </image>
@@ -65,7 +65,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ImageView fitHeight="275.0" fitWidth="344.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true">
+                        <ImageView fx:id="imagCantos" fitHeight="275.0" fitWidth="344.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true">
                            <image>
                               <Image url="@tresCantos.jpg" />
                            </image>
@@ -111,7 +111,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="662.0">
                      <children>
-                        <ImageView fitHeight="272.0" fitWidth="361.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagVallecas" fitHeight="272.0" fitWidth="361.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@cineVallecas.jpg" />
                            </image>
@@ -162,7 +162,7 @@
                            <font>
                               <Font name="Bodoni MT" size="18.0" />
                            </font></TextArea>
-                        <ImageView fitHeight="270.0" fitWidth="349.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true">
+                        <ImageView fx:id="imagCallao" fitHeight="270.0" fitWidth="349.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true">
                            <image>
                               <Image url="@CinesCallao.jpg" />
                            </image>
@@ -204,7 +204,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ImageView fitHeight="260.0" fitWidth="345.0" layoutX="28.0" layoutY="22.0" pickOnBounds="true">
+                        <ImageView fx:id="imagTorrejon" fitHeight="260.0" fitWidth="345.0" layoutX="28.0" layoutY="22.0" pickOnBounds="true">
                            <image>
                               <Image url="@torrejonCine.jpg" />
                            </image>

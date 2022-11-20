@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javax.swing.JOptionPane;
 
 import entradas.entradas;
+import javafx.scene.control.Alert;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,11 +18,16 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class controlladorMain implements Initializable{
+
+	int contador=0;
     @FXML
     private MenuItem hechas;
     @FXML
@@ -49,8 +55,37 @@ public class controlladorMain implements Initializable{
 
     @Override
 	public void initialize(java.net.URL arg0, ResourceBundle arg1) {
-    	if(arg0.toString().contains("Inicio.fxml")) 
+    	if(arg0.toString().contains("Inicio.fxml")) {
     		usu.getItems().addAll("Usuario","Admin");
+    		usuario.addEventFilter(KeyEvent.KEY_PRESSED, (e) -> {
+					if(e.getCode().toString().equals("BACK_SPACE")&& contador>0) {
+						contador--;
+						System.out.println(contador+" restaa");
+					}else{
+						contador++;
+					
+						System.out.println(contador);
+		    			System.out.println("Code: " + e.getCode().getChar() + "-> " );
+						
+					}
+				
+		});
+
+    		contraseña.addEventFilter(KeyEvent.KEY_PRESSED, (e) -> {
+				if(e.getCode().toString().equals("BACK_SPACE")&& contador>0) {
+					contador--;
+					System.out.println(contador+" restaa");
+				}else{
+					contador++;
+				
+					System.out.println(contador);
+	    			System.out.println("Code: " + e.getCode().getChar() + "-> " );
+					
+				}
+			
+	});
+    		
+    	}
 	}
     
     @FXML
@@ -124,15 +159,21 @@ public class controlladorMain implements Initializable{
     @FXML 
     void inicioSesion(ActionEvent event)throws IOException{
     	if(usuario.getText().toString().equals("practica") && contraseña.getText().toString().equals("1234")&&usu.getValue()!=null) {
-    		volverInicio(event);
-    		
+    		volverInicio(event);    		
     	}
     	else {
     		
-    		JOptionPane.showMessageDialog(null,"Usuario/Contraseña Incorrectos \n Eliga el Rol", "CINEPLANET", JOptionPane.ERROR_MESSAGE);
+    		 Alert alert = crearAlert(AlertType.ERROR, "ERROR", "Datos Faltantes o Incorrectos","Usuario o Contraseña Invalidos, no olvide elegir Rol" );
+       	  alert.showAndWait();
     	}
     }
-
+    private Alert crearAlert(AlertType type, String title, String header, String contextText) {
+       	Alert auxAlert = new Alert(type);
+       	auxAlert.setTitle(title);
+       	auxAlert.setHeaderText(header);
+       	auxAlert.setContentText(contextText);
+       	return auxAlert;
+       }
     @FXML
     void volverInicio(ActionEvent event) throws IOException {
     	

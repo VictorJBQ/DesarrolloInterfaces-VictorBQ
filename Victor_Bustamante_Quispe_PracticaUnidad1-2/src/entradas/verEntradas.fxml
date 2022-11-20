@@ -24,7 +24,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="646.0" prefWidth="204.0" style="-fx-background-color: #002A64;">
                <children>
-                  <TextField layoutX="12.0" layoutY="124.0" />
+                  <TextField fx:id="filtroCliente" layoutX="12.0" layoutY="124.0" />
                   <Label layoutX="22.0" layoutY="100.0" text="Buscar Cliente" textFill="WHITE">
                      <font>
                         <Font name="Copperplate Gothic Bold" size="12.0" />
@@ -35,7 +35,7 @@
                         <Image url="@cinegift.gif" />
                      </image>
                   </ImageView>
-                  <Button layoutX="14.0" layoutY="174.0" mnemonicParsing="false" style="-fx-background-color: orange;" text="Buscar">
+                  <Button layoutX="14.0" layoutY="174.0" mnemonicParsing="false" onAction="#buscarCliente" style="-fx-background-color: orange;" text="Buscar">
                      <effect>
                         <DropShadow>
                            <color>

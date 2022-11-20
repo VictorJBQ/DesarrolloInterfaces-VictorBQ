@@ -41,7 +41,7 @@
             <Font size="23.0" />
          </font>
       </Label>
-      <Button fx:id="entrar" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#inicioSesion" text="Entrar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+      <Button fx:id="entrar" contentDisplay="RIGHT" defaultButton="true" mnemonicParsing="false" onAction="#inicioSesion" text="Entrar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
          <font>
             <Font size="15.0" />
          </font>

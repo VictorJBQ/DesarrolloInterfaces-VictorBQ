@@ -1,11 +1,22 @@
 package peliculas;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.TextFieldTreeCell;
 
 public class controlladorCines {
+	  @FXML
+	    private Label adam;
+
+	    @FXML
+	    private Label avatar;
+
+	    @FXML
+	    private Label pray;
+	    @FXML
+	    private Label wakanda;
 
 	    @FXML
 	    private TreeView<String> TreeAvatar;
@@ -77,5 +88,38 @@ public class controlladorCines {
 	         
 	         
 	    }
+
+		public Label getAdam() {
+			return adam;
+		}
+
+		public void setAdam(Label adam) {
+			this.adam = adam;
+		}
+
+		public Label getAvatar() {
+			return avatar;
+		}
+
+		public void setAvatar(Label avatar) {
+			this.avatar = avatar;
+		}
+
+		public Label getPray() {
+			return pray;
+		}
+
+		public void setPray(Label pray) {
+			this.pray = pray;
+		}
+
+		public Label getWakanda() {
+			return wakanda;
+		}
+
+		public void setWakanda(Label wakanda) {
+			this.wakanda = wakanda;
+		}
+	    
 	    
 }

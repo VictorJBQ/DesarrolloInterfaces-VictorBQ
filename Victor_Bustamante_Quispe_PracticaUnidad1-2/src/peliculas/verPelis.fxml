@@ -30,7 +30,7 @@
                         <Image url="@avatar2.jpg" />
                      </image>
                   </ImageView>
-                  <Label layoutX="43.0" layoutY="268.0" text="Avatar 2" textFill="WHITE">
+                  <Label fx:id="avatar" layoutX="43.0" layoutY="268.0" text="Avatar 2" textFill="WHITE">
                      <font>
                         <Font name="Copperplate Gothic Bold" size="31.0" />
                      </font>
@@ -46,7 +46,7 @@
                      </image>
                   </ImageView>
                   <TreeView fx:id="treePray" layoutX="223.0" layoutY="28.0" prefHeight="284.0" prefWidth="230.0" />
-                  <Label layoutX="16.0" layoutY="261.0" prefHeight="46.0" prefWidth="203.0" text="Pray For The Devil" textFill="WHITE">
+                  <Label fx:id="pray" layoutX="16.0" layoutY="261.0" prefHeight="46.0" prefWidth="203.0" text="Pray For The Devil" textFill="WHITE">
                      <font>
                         <Font name="Copperplate Gothic Bold" size="19.0" />
                      </font>
@@ -61,7 +61,7 @@
                      </image>
                   </ImageView>
                   <TreeView fx:id="treeWak" layoutX="226.0" layoutY="30.0" prefHeight="283.0" prefWidth="230.0" />
-                  <Label layoutX="12.0" layoutY="268.0" text="Wakanda Forever" textFill="WHITE">
+                  <Label fx:id="wakanda" layoutX="12.0" layoutY="268.0" text="Wakanda Forever" textFill="WHITE">
                      <font>
                         <Font name="Copperplate Gothic Bold" size="20.0" />
                      </font>
@@ -76,7 +76,7 @@
                      </image>
                   </ImageView>
                   <TreeView fx:id="treeAdam" layoutX="227.0" layoutY="28.0" prefHeight="285.0" prefWidth="227.0" />
-                  <Label layoutX="29.0" layoutY="264.0" text="Black Adam" textFill="WHITE">
+                  <Label fx:id="adam" layoutX="29.0" layoutY="264.0" text="Black Adam" textFill="WHITE">
                      <font>
                         <Font name="Copperplate Gothic Bold" size="26.0" />
                      </font>
