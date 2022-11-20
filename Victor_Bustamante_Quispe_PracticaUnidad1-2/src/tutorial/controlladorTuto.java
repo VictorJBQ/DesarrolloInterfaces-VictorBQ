@@ -1,17 +1,21 @@
 package tutorial;
 
 
+import java.security.Identity;
+
 import javax.swing.JOptionPane;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.ComboBoxListCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
 
@@ -66,12 +70,19 @@ public class controlladorTuto {
     @FXML
     void valorar(ActionEvent event) {
     	
-    	
-    		JOptionPane.showMessageDialog(null,"GRACIAS POR ENVIAR TU VALORACION", "CINEPLANET", JOptionPane.INFORMATION_MESSAGE);
+    	 Alert alert = crearAlert(AlertType.CONFIRMATION, "EXITO", "Valoración Enviada con Exito","Gracias por enviar su valoración" );
+      	  alert.showAndWait();
 
     		
     	
     	
     }
+    private Alert crearAlert(AlertType type, String title, String header, String contextText) {
+       	Alert auxAlert = new Alert(type);
+       	auxAlert.setTitle(title);
+       	auxAlert.setHeaderText(header);
+       	auxAlert.setContentText(contextText);
+       	return auxAlert;
+       }
 
 }

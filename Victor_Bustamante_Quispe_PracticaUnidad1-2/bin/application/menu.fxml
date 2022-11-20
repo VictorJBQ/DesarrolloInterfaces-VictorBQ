@@ -14,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="928.0" style="-fx-background-color: #002A64; -fx-border-color: FFBF67; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controlladorMain">
    <center>
-      <ImageView fitHeight="301.0" fitWidth="585.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="cineplan" fitHeight="301.0" fitWidth="585.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@cinegift.gif" />
          </image>

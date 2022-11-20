@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 
 import entradas.entradas;
 import javafx.scene.control.Alert;
+import javafx.scene.control.CheckBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +19,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -27,13 +29,17 @@ import javafx.stage.Stage;
 
 public class controlladorMain implements Initializable{
 
-	int contador=0;
+	int contador=0;    
+	@FXML
+    private ImageView cineplan;
     @FXML
     private MenuItem hechas;
     @FXML
     private ComboBox<String> usu;
     @FXML
     private PasswordField contraseña;
+    @FXML
+    private CheckBox dragModeActiveProperty;
     @FXML
     private TextField usuario;
 	private entradas ent;
@@ -86,6 +92,9 @@ public class controlladorMain implements Initializable{
 	});
     		
     	}
+    	else if(arg0.toString().contains("menu.fxml")){
+    		makeDraggable(cineplan);
+    	}
 	}
     
     @FXML
@@ -104,6 +113,7 @@ public class controlladorMain implements Initializable{
     @FXML
     void abrirCines(ActionEvent event) {
     	try {
+
 			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/cines/verCine.fxml"));
@@ -118,6 +128,8 @@ public class controlladorMain implements Initializable{
     @FXML
     void abrirTuto(ActionEvent event) {
     	try {
+
+    		dragModeActiveProperty.setDisable(true);
 			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/tutorial/vertutorial.fxml"));
@@ -132,7 +144,6 @@ public class controlladorMain implements Initializable{
     @FXML
     void compraEntrada(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/entradas/compEntrada.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
@@ -146,7 +157,6 @@ public class controlladorMain implements Initializable{
     @FXML
     public void entradasHechas(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinamicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/entradas/verEntradas.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
@@ -176,7 +186,6 @@ public class controlladorMain implements Initializable{
        }
     @FXML
     void volverInicio(ActionEvent event) throws IOException {
-    	
     	 Node source = (Node) event.getSource();
     	    Stage stage = (Stage) source.getScene().getWindow();
     	    FXMLLoader loader = new FXMLLoader(Main.class.getResource("menu.fxml"));
@@ -188,6 +197,40 @@ public class controlladorMain implements Initializable{
 			stage.setScene(scene);
     	    stage.show();
     	    
+    }
+    private void makeDraggable(final Node node) {
+        final DragContext dragContext = new DragContext();
+            
+        node.addEventFilter(MouseEvent.ANY, (mouseEvent) -> {
+        	
+        		// Se desactivan eventos para los hijos
+                mouseEvent.consume();
+            
+        });
+        
+        node.addEventFilter(MouseEvent.MOUSE_PRESSED, (mouseEvent) -> {
+        	
+        		// Guardamos la posición del ratón
+                dragContext.mouseAnchorX = mouseEvent.getX();
+                dragContext.mouseAnchorY = mouseEvent.getY();
+                dragContext.initialTranslateX = node.getTranslateX();
+                dragContext.initialTranslateY = node.getTranslateY();
+           
+        });
+          
+        node.addEventFilter(MouseEvent.MOUSE_DRAGGED, (mouseEvent) -> {
+			
+			    // Se ajusta la posición final 
+			    node.setTranslateX(dragContext.initialTranslateX + mouseEvent.getX() - dragContext.mouseAnchorX);
+			    node.setTranslateY(dragContext.initialTranslateY + mouseEvent.getY() - dragContext.mouseAnchorY);
+			
+        });           
+    }
+    private static final class DragContext {
+        public double mouseAnchorX;
+        public double mouseAnchorY;
+        public double initialTranslateX;
+        public double initialTranslateY;
     }
 
    

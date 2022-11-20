@@ -2,17 +2,22 @@ package entradas;
 
 
 import java.io.IOException;
+import java.util.EventObject;
 import java.util.ResourceBundle;
 
 import javax.print.DocFlavor.URL;
 
 import application.controlladorMain;
+import javafx.stage.Stage;
+import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
@@ -27,6 +32,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 
 public class ControllerEntradas implements Initializable{
 
@@ -115,13 +121,13 @@ private Alert crearAlert(AlertType type, String title, String header, String con
    	peliculaTabla.setCellValueFactory(new PropertyValueFactory<entradas, String>("pelicula"));
    	precioTabla.setCellValueFactory(new PropertyValueFactory<entradas, Double>("Total"));
    
-   	
    	tablaEntradas.setItems(getDatos());
    	filtroCliente.addEventFilter(KeyEvent.KEY_PRESSED, (e) -> {
 		if(e.getCode().toString().equals("BACK_SPACE")&& contador>0) {
 			contador--;
 			System.out.println(contador+" restaa");
 		}else{
+			
 			contador++;
 		
 			System.out.println(contador);
@@ -130,7 +136,10 @@ private Alert crearAlert(AlertType type, String title, String header, String con
 		}
 	
 });
-   	
+tablaEntradas.getSelectionModel().getSelectedItems().addListener((Observable obs)->{
+	System.out.println(obs);
+	
+});
    	
    	
    	}
@@ -195,6 +204,7 @@ private Alert crearAlert(AlertType type, String title, String header, String con
 		   tablaEntradas.setItems(filtropersonas);
 	   }
    }
+   
    
     	
     
