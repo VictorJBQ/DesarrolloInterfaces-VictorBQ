@@ -1,0 +1,10 @@
+TabPane{
+  -fx-background-color:white;
+}
+TabPane:hover{
+	
+  -fx-background-color:red;
+}
+.data0.chart-bar{
+	-fx-background-colo:blue;
+}

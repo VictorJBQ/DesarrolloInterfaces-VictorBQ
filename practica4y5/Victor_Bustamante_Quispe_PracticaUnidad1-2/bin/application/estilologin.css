@@ -1,0 +1,79 @@
+GridPane{
+	-fx-background-color:#002A64;
+	-fx-border-color:blue;
+	-fx-border-width:3;
+	-fx-pref-width:502;
+	-fx-pref-height:268;
+	
+}
+.button:hover {
+	-fx-background-color: grey;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: 0;
+ 
+}
+.button {     
+	-fx-border-color: #e2e2e2;     
+	-fx-border-width: 2.0;     
+	-fx-background-radius: 0.0;     
+	-fx-background-color: #1d1d1d;     
+	-fx-font-family:  "Helvetica", Arial, sans-serif;     
+	-fx-font-size: 10.0pt;     
+	-fx-text-fill: #d8d8d8;     
+	-fx-background-insets: 0.0 0.0 0.0 0.0, 0.0, 1.0, 200.0;     
+	-fx-text-alignment: center;
+}
+
+#contraPrueba:hover{
+	-fx-opacity: 0;
+}
+#usuPrueba:hover{
+	-fx-opacity: 0;
+}
+#user{
+	
+	-fx-text-fill:white;
+	-fx-font-family:"Brush Script MT";
+	-fx-font-size:30px;
+}
+#user:hover{
+	-fx-text-fill:#75BD43;
+}
+#usuario:focused{
+	-fx-rotate:15;
+	-fx-background-color: #B3D9D7;	
+}
+#contrasenia{
+	-fx-text-fill:white;
+	-fx-font-family:"Brush Script MT";
+	-fx-font-size:30px;
+}
+#contrasenia:hover{
+	-fx-text-fill:#75BD43;
+}
+#contra:focused{
+	-fx-rotate:-15;
+	-fx-background-color: #B3D9D7;	
+}
+.MenuItem:hover{
+	-fx-background-color: red;
+}
+#imagenLogin{
+	-fx-image:url("../application/cineplanet.jpg");
+}
+#imagenLogin:hover {
+	-fx-rotate: 100;
+	
+}
+.combo-box .list-cell:filled:selected {
+    -fx-background-color: #64ffe6;
+    -fx-text-fill: black;
+}
+/*Change cells of autocomplete popup*/
+.combo-box .list-cell:hover {
+    -fx-background-color: #5f68ff;
+}
+/*Change cells of combobox*/
+.combo-box .list-cell {
+    -fx-background-color: #ff92b8;
+}

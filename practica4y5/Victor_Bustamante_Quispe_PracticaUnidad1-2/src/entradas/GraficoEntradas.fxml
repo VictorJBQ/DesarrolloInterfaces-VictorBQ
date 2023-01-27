@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="679.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entradas.ControllerEntradas">
+  <tabs>
+    <Tab text="Cines Más Visitados">
+      <content>
+        <AnchorPane prefWidth="500.0">
+   <children>
+                  <BarChart fx:id="BarChart" prefHeight="438.0" prefWidth="679.0" title="Contador Clientes">
+                    <xAxis>
+                      <CategoryAxis fx:id="abajoAxis" autoRanging="false" endMargin="10.0" label="Cines" side="BOTTOM" startMargin="10.0" tickLabelGap="5.0" tickLabelRotation="45.0" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="izquierdaAxis" autoRanging="false" label="Clientes" minorTickCount="1" minorTickLength="1.0" minorTickVisible="false" side="LEFT" tickLabelGap="1.0" tickLength="1.0" tickUnit="1.0" upperBound="20.0" />
+                    </yAxis>
+                  </BarChart>
+   </children>
+</AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Peliculas Más Vistas">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <PieChart fx:id="piePeliculas" layoutX="62.0" layoutY="23.0" legendSide="LEFT" prefHeight="400.0" prefWidth="569.0" title="Peliculas" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Untitled Tab">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <StackedBarChart fx:id="StackedBarchart" categoryGap="50.0" prefHeight="400.0" prefWidth="634.0">
+                    <xAxis>
+                      <CategoryAxis fx:id="abajoAxisStacked" label="Cines" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="izquierdaAxisStacked" label="Dinero Acumulado" minorTickVisible="false" side="LEFT" />
+                    </yAxis>
+                  </StackedBarChart>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

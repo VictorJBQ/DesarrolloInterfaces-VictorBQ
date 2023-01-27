@@ -1,0 +1,35 @@
+BorderPane{
+	-fx-background-color: white;
+	-fx-pref-width: -1;
+	-fx-pref-height: -1;
+}
+.hyperlink{
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-weight: bold italic;
+	-fx-font-size: 20px;
+	-fx-text-fill: #2ddf42;
+}
+TabPane{
+	-fx-background-color: #F28451;
+	-fx-tab-min-height: 20px; 
+	-fx-tab-max-height: 20px; 
+}
+.tab-pane{
+	
+	-fx-background-color: #F28451;
+}
+.tab{
+	-fx-background-color: orange;
+	-fx-text-fill:black;
+	-fx-border-color: yellow;
+	-fx-border-width: 2px;
+	}
+.tab:selected{
+	
+	-fx-border-color: #2ddf42;
+	-fx-background-color: red;
+}
+#anchor{
+	-fx-pref-height: auto;
+	-fx-pref-width: auto;
+}

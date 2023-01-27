@@ -1,0 +1,42 @@
+BorderPane{
+-fx-background-color: #002A64;	
+-fx-border-color: FFBF67;
+-fx-border-width: 4;
+-fx-pref-width: 928;
+-fx-pref-height:701;
+}
+BorderPane:hover{
+	-fx-border-color:#75BD43;
+}
+#hbox{
+	-fx-background-color: #0187C6;
+	-fx-padding: 15, 0, 15, 0;
+	-fx-spacing: 25;
+	
+}
+.button{
+	-fx-background-color:  FF9F1C;
+	-fx-pref-width: 100; 
+	-fx-pref-height: 20;
+	-fx-effect: dropshadow(three-pass-box, #000000, 21.0, 0, 8.0, 10);
+}
+.button:hover{
+	-fx-background-color: grey;
+}
+#menuButton{
+	-fx-background-color:  FF9F1C;
+	-fx-pref-width: 100; 
+	-fx-pref-height: 20;
+	-fx-effect: dropshadow(three-pass-box, #000000, 21, 0, 8.0, 10);
+}
+#menuButton:hover{
+	-fx-background-color: grey;
+}
+.menu-item:hover{
+	-fx-background-color: red;
+}
+#imagen{
+	-fx-image:url("../application/cinegift.gif");
+	-fx-fit-to-height: 301;
+	-fx-fit-to-width: 585;
+}
