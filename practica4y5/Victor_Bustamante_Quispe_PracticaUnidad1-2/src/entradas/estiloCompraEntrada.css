@@ -1,0 +1,8 @@
+.radio-button {
+   -fx-background-color: lightblue;
+   -fx-text-fill: white;
+}
+
+.radio-button:selected {
+   -fx-background-color: blue;
+}

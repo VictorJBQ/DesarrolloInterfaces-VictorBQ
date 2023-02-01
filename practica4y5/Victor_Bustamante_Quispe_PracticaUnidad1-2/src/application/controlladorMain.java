@@ -137,6 +137,8 @@ public class controlladorMain implements Initializable{
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/tutorial/vertutorial.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
+
+			listadoControles.getStylesheets().add(this.getClass().getResource("/tutorial/estilostutorial.css").toExternalForm());
 			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
@@ -150,6 +152,7 @@ public class controlladorMain implements Initializable{
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/entradas/compEntrada.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
+			listadoControles.getStylesheets().add(this.getClass().getResource("/entradas/estiloCompraEntrada.css").toExternalForm());
 			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
@@ -175,6 +178,8 @@ public class controlladorMain implements Initializable{
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/entradas/verEntradas.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
+
+			listadoControles.getStylesheets().add(this.getClass().getResource("/entradas/estiloEntradas.css").toExternalForm());
 			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {

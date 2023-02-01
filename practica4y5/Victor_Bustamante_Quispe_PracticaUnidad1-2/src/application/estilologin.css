@@ -6,12 +6,14 @@ GridPane{
 	-fx-pref-height:268;
 	
 }
-.button:hover {
+
+
+ .button:hover {
 	-fx-background-color: grey;
     -fx-border-color: -fx-box-border;
     -fx-border-insets: 0;
  
-}
+} 
 .button {     
 	-fx-border-color: #e2e2e2;     
 	-fx-border-width: 2.0;     
