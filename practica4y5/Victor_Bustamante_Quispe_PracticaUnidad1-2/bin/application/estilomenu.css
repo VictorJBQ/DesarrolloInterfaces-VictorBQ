@@ -23,6 +23,10 @@ BorderPane:hover{
 .button:hover{
 	-fx-background-color: grey;
 }
+.button:focused{
+	-fx-background-color: grey;
+	
+}
 #menuButton{
 	-fx-background-color:  FF9F1C;
 	-fx-pref-width: 100; 

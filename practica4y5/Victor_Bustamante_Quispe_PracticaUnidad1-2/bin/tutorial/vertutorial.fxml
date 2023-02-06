@@ -29,9 +29,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="928.0" style="-fx-background-color: white; -fx-border-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutorial.controlladorTuto">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white; -fx-border-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutorial.controlladorTuto">
    <left>
-      <FlowPane prefHeight="584.0" prefWidth="934.0" BorderPane.alignment="CENTER">
+      <FlowPane BorderPane.alignment="CENTER">
          <children>
             <Accordion prefHeight="586.0" prefWidth="927.0">
               <panes>
@@ -41,7 +41,7 @@
                            <children>
                               <ScrollPane prefHeight="512.0" prefWidth="922.0">
                                 <content>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="933.0" style="-fx-background-color: red;">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="933.0">
                                        <children>
                                           <ImageView fitHeight="372.0" fitWidth="462.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
                                              <image>
@@ -57,10 +57,31 @@
                      <font>
                         <Font name="Bookman Old Style" size="20.0" />
                      </font>
+                     <textFill>
+                        <RadialGradient centerX="0.3634361485552683" centerY="0.5" focusDistance="0.16513754468445385" radius="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.2207999974489212" green="0.5233725905418396" blue="0.9200000166893005" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4363293175327447">
+                                 <color>
+                                    <Color green="0.16899999976158142" blue="0.38999998569488525" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color green="0.16470588743686676" blue="0.3921568691730499" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
                 </TitledPane>
                 <TitledPane alignment="CENTER" text="Cine">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: red;">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
                               <ImageView fitHeight="371.0" fitWidth="499.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -78,7 +99,7 @@
                 </TitledPane>
                 <TitledPane alignment="CENTER" prefWidth="202.0" text="Peliculas">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="201.0" style="-fx-background-color: red;">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="201.0">
                            <children>
                               <ImageView fitHeight="360.0" fitWidth="440.0" layoutX="27.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -106,7 +127,7 @@
                                        <children>
                                           <ScrollPane layoutX="-1.0" layoutY="-3.0" prefHeight="441.0" prefWidth="458.0">
                                             <content>
-                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="523.0" prefWidth="434.0" style="-fx-background-color: red;">
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="523.0" prefWidth="434.0">
                                                    <children>
                                                       <ImageView fitHeight="240.0" fitWidth="398.0" layoutX="17.0" layoutY="21.0" pickOnBounds="true">
                                                          <image>
@@ -127,7 +148,7 @@
                                        <children>
                                           <ScrollPane layoutX="-1.0" layoutY="-2.0" prefHeight="438.0" prefWidth="463.0">
                                             <content>
-                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="438.0" style="-fx-background-color: red;">
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="438.0">
                                                    <children>
                                                       <ImageView fitHeight="240.0" fitWidth="398.0" layoutX="19.0" layoutY="21.0" pickOnBounds="true">
                                                          <image>
@@ -167,7 +188,7 @@
                                     <Font name="Berlin Sans FB" size="18.0" />
                                  </font>
                               </Label>
-                              <GridPane alignment="CENTER" layoutX="29.0" layoutY="86.0" prefHeight="266.0" prefWidth="738.0" style="-fx-background-color: BBDDFF;">
+                              <GridPane alignment="CENTER" layoutX="29.0" layoutY="86.0" prefHeight="266.0" prefWidth="738.0">
                                 <columnConstraints>
                                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="281.20001220703125" minWidth="10.0" prefWidth="219.99996337890627" />
                                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="497.60003662109375" minWidth="10.0" prefWidth="497.60003662109375" />
@@ -221,9 +242,9 @@
                                           <Font name="Book Antiqua Bold" size="18.0" />
                                        </font>
                                     </Label>
-                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <AnchorPane id="anchorlist" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <children>
-                                          <ListView fx:id="listView1" layoutX="14.0" layoutY="12.0" prefHeight="136.0" prefWidth="466.0" style="-fx-background-color: FF9F1C;" />
+                                          <ListView fx:id="listView1" layoutX="14.0" layoutY="12.0" prefHeight="136.0" prefWidth="466.0" />
                                        </children>
                                     </AnchorPane>
                                  </children>
@@ -267,29 +288,9 @@
       </FlowPane>
    </left>
    <top>
-      <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-border-color: BLACK; -fx-background-color: #002A64;" BorderPane.alignment="CENTER">
+      <AnchorPane id="anchorTitulo" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="307.0" layoutY="7.0" prefHeight="48.0" prefWidth="311.0" text="GUIA DE USO">
-               <font>
-                  <Font name="High Tower Text" size="40.0" />
-               </font>
-               <textFill>
-                  <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.16513754468445385" radius="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.2207999974489212" green="0.5233725905418396" blue="0.9200000166893005" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </RadialGradient>
-               </textFill>
-            </Label>
+            <Label id="guia" layoutX="307.0" layoutY="7.0" prefHeight="48.0" prefWidth="311.0" text="GUIA DE USO" />
          </children>
       </AnchorPane>
    </top>

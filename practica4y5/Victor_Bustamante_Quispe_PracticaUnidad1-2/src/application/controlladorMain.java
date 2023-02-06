@@ -107,6 +107,7 @@ public class controlladorMain implements Initializable{
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(controlladorMain.class.getResource("/peliculas/verPelis.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
+			listadoControles.getStylesheets().add(this.getClass().getResource("/peliculas/estiloPelis.css").toExternalForm());
 			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {

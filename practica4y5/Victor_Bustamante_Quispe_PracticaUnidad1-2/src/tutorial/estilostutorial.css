@@ -1,3 +1,29 @@
+BorderPane{
+	-fx-pref-width: -1;
+	-fx-pref-height: -1;
+}
+#anchorTitulo{
+	-fx-border-color: black;
+	-fx-background-color: #002A64;
+}
+GridPane{
+	-fx-background-color: #BBDDFF;
+}
+AnchorPane{
+	-fx-background-color: red;
+}
+#anchorlist{
+	
+	-fx-background-color: #BBDDFF;
+}
+listview{
+	-fx-background-color: #FF9F1C;
+}
+#guia{
+	-fx-font-family: "High Tower Text";
+	-fx-font-size: 40px;
+	-fx-text-fill: radial-gradient(focus-angle 0.0deg, focus-distance 16.5138% , center 50.0% 50.0%, radius 100.0%, #3885eb 0.0%, #ffffff 100.0%);
+}
 .radio-button {
    -fx-background-color: lightblue;
    -fx-text-fill: white;
@@ -47,4 +73,19 @@
 .date-picker-popup > .month-year-pane {
     -fx-base: #1d1d1d ;
     -fx-mark-highlight-color: -fx-light-text-color ;
+}
+.accordion .titled-pane {
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.accordion .titled-pane .header .title {
+  -fx-background-color: linear-gradient(#3d5afe, #304ffe);
+}
+
+.accordion .titled-pane:hover {
+-fx-background-radius: 5;
+  -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #3885eb 0.0%, #a60303 100.0%);
+  -fx-text-fill: black;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+  -fx-padding: 5;
 }

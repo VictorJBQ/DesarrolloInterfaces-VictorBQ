@@ -1,0 +1,22 @@
+
+GridPane {
+	-fx-background-color: #002A64;
+}
+.label {
+-fx-font-family: "Copperplate Gothic Bold";
+-fx-text-fill: white;
+}
+#labelAva{
+	-fx-font-size: 31px;
+}
+#labelWakanda{
+	
+-fx-font-size: 20px;
+}
+#labelPrey{
+	-fx-font-size: 19px;
+}
+#labelAdam{
+	-fx-font-size: 26px;
+}
+ 
