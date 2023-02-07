@@ -11,8 +11,9 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 /**
- * 
- * @author 34672
+ * Clase main donde se inicia la aplicación
+ * @author victor Bustamante
+ *@version 1.0
  *
  */
 
@@ -54,8 +55,9 @@ public class Main extends Application {
 	
    
 	/**
-	 * 
-	 * @return
+	 * Metodos Getter y setter para que los controladores accedan al Stafe con la ventana
+	 * principal
+	 * @return El stage con la ventana principal
 	 */
 	
 	public Stage getPrimaryStage() {

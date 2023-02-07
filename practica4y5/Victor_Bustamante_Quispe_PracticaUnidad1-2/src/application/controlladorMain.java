@@ -30,6 +30,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class controlladorMain implements Initializable{
+	
 	   @FXML
 	    private Label contrasenia;
 	int contador=0;    
@@ -62,6 +63,10 @@ public class controlladorMain implements Initializable{
     @FXML
     private URL location;
 
+    /**
+     * Controlador del Main que controla si entra como admin o como usuario
+     * y si la contraseña y usuario con correctos
+     */
     @Override
 	public void initialize(java.net.URL arg0, ResourceBundle arg1) {
     	if(arg0.toString().contains("Inicio.fxml")) {
@@ -100,6 +105,10 @@ public class controlladorMain implements Initializable{
     	}
 	}
     
+    /**
+     * Metodos para abrir la pagina Pelicula
+     * @param event
+     */
     @FXML
     void abriPelis(ActionEvent event) {
     	try {
@@ -114,6 +123,10 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
+    /**
+     * Metodos para abrir la pagina Cine
+     * @param event
+     */
     @FXML
     void abrirCines(ActionEvent event) {
     	try {
@@ -129,7 +142,10 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
-
+    /**
+     * Metodos para abrir la pagina Tutorial
+     * @param event
+     */
     @FXML
     void abrirTuto(ActionEvent event) {
     	try {
@@ -146,7 +162,10 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
-
+    /**
+     * Metodos para abrir la pagina Comprar Entrada
+     * @param event
+     */
     @FXML
     void compraEntrada(ActionEvent event) {
     	try {
@@ -160,6 +179,10 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
+    /**
+     * Metodos para abrir la pagina Estadisticas
+     * @param event
+     */
     @FXML
     void abrirEstadistica(ActionEvent event) {
     	try {
@@ -173,6 +196,11 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
+    /**
+     * Metodos para abrir la pagina Entradas Hechas, donde se ven las entradas
+     * realizadas
+     * @param event
+     */
     @FXML
     public void entradasHechas(ActionEvent event) {
     	try {
@@ -187,6 +215,7 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
+    
     @FXML 
     void inicioSesion(ActionEvent event)throws IOException{
     	if(usuario.getText().toString().equals("practica") && contraseña.getText().toString().equals("1234")&&usu.getValue()!=null) {
@@ -205,6 +234,10 @@ public class controlladorMain implements Initializable{
        	auxAlert.setContentText(contextText);
        	return auxAlert;
        }
+    /**
+     * Metodos para volver a la pagina principal del menu
+     * @param event
+     */
     @FXML
     void volverInicio(ActionEvent event) throws IOException {
     	 Node source = (Node) event.getSource();
@@ -222,6 +255,10 @@ public class controlladorMain implements Initializable{
     	    stage.show();
     	    
     }
+    /**
+     * Metodo que nos permite mover la imagen del inicio del menu
+     * @param node
+     */
     private void makeDraggable(final Node node) {
         final DragContext dragContext = new DragContext();
             
@@ -257,7 +294,6 @@ public class controlladorMain implements Initializable{
         public double initialTranslateY;
     }
 
-   
 
 	public GridPane getGridPane() {
 		return gridPane;

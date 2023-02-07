@@ -275,6 +275,10 @@ tablaEntradas.getSelectionModel().getSelectedItems().addListener((Observable obs
 		
 		return series3;
 	}
+	/**
+	 * Metodos que nos da la funcionalidad de buscar cliente
+	 * @param event
+	 */
    @FXML
    void buscarCliente(ActionEvent event) {
 	   String filtroNom =  filtroCliente.getText();

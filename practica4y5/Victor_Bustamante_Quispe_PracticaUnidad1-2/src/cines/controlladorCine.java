@@ -10,10 +10,14 @@ import javafx.scene.control.Hyperlink;
 
 public class controlladorCine {
 
-
 	    @FXML
 	    private Hyperlink linkOdeon;
-
+/**
+ * Metodo para abrir link 
+ * @param event
+ * @throws IOException
+ * @throws URISyntaxException
+ */
 	    @FXML
 	    void abrirLink(ActionEvent event) throws IOException, URISyntaxException {
 	    	Desktop.getDesktop().browse(new URI("https://odeonmulticines.com/"));
