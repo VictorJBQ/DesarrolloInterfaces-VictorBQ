@@ -10,7 +10,11 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
-
+/**
+ * 
+ * @author 34672
+ *
+ */
 
 public class Main extends Application {
 	private Stage primaryStage;
@@ -49,6 +53,10 @@ public class Main extends Application {
 	}
 	
    
+	/**
+	 * 
+	 * @return
+	 */
 	
 	public Stage getPrimaryStage() {
 		return primaryStage;
