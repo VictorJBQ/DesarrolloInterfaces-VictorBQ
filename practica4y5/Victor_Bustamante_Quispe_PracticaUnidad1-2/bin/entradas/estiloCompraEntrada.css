@@ -2,7 +2,28 @@
    -fx-background-color: lightblue;
    -fx-text-fill: white;
 }
-
+BorderPane{
+	-fx-background-color:  #5582A6;
+	
+}
+label{
+	-fx-font-family: "Copperplate Gothic Bold";
+	-fx-font-size: 21px;
+}
+#entradalabel{
+	-fx-font-size: 15px;
+}
 .radio-button:selected {
    -fx-background-color: blue;
+}
+TextField:focused{
+	
+	-fx-background-color: #B3D9D7;	
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: #5f68ff;
+}
+/*Change cells of combobox*/
+.combo-box .list-cell {
+    -fx-background-color: #ff92b8;
 }
