@@ -13,6 +13,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 
 <BorderPane prefHeight="501.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entradas.ControllerEntradas">
    <bottom>
@@ -43,7 +46,24 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Label text="Nombre" GridPane.rowIndex="1" />
+                  <Label text="Nombre" GridPane.rowIndex="1">
+                     <textFill>
+                        <LinearGradient endY="1.0" startX="1.0" startY="0.8257576010443948">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6736842393875122" green="0.00499025359749794" blue="0.00499025359749794" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="9.115515130211094E-17" green="0.821052610874176" blue="0.6021052598953247" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
                   <Label text="Pelicula" GridPane.rowIndex="2" />
                   <Label id="entradalabel" text="Nº Entradas" GridPane.rowIndex="3" />
                   <Label text="Cine" GridPane.rowIndex="4" />

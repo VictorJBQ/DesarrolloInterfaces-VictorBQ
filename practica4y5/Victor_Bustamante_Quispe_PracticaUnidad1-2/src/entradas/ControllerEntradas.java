@@ -101,7 +101,14 @@ public ObservableList<entradas> getDatos() {
 public void setDatos(ObservableList<entradas> datos) {
 	this.datos = datos;
 }
-
+/**
+ * 
+ * @param type
+ * @param title recogemos el titulo para ponerlo en la alerta auxiliar
+ * @param header El cabezero de la alerta
+ * @param contextText y el texto de la alerta
+ * @return
+ */
 private Alert crearAlert(AlertType type, String title, String header, String contextText) {
    	Alert auxAlert = new Alert(type);
    	
@@ -198,6 +205,10 @@ tablaEntradas.getSelectionModel().getSelectedItems().addListener((Observable obs
  
 		
 	}
+   /**
+    * Crea un PieChart recogiendo los datos del observableList
+    * @return un observableList actualizado con los contenidos
+    */
    
    private ObservableList<PieChart.Data> pie(){
 	   ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();
@@ -250,6 +261,10 @@ tablaEntradas.getSelectionModel().getSelectedItems().addListener((Observable obs
 		}
 		return series1;
 	}
+   /**
+    * 
+    * @return
+    */
    private XYChart.Series<String, Double> initDatos2() {
 		XYChart.Series<String, Double> series2 = new XYChart.Series<String, Double>();
 		
