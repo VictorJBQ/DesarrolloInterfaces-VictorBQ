@@ -262,8 +262,8 @@ tablaEntradas.getSelectionModel().getSelectedItems().addListener((Observable obs
 		return series1;
 	}
    /**
-    * 
-    * @return
+    * Metodo para inicializar datos del Chart
+    * @return devuelve un objeto Chart.Series
     */
    private XYChart.Series<String, Double> initDatos2() {
 		XYChart.Series<String, Double> series2 = new XYChart.Series<String, Double>();

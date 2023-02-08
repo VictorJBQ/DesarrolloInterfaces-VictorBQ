@@ -5,7 +5,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.TextFieldTreeCell;
-
+/**
+ * Clase controladorCines que se encarga de cargar los datos en la ventana
+ * @author victor Bustamante
+ *@version 1.0
+ *
+ */
 public class controlladorCines {
 	  @FXML
 	    private Label adam;
@@ -29,7 +34,9 @@ public class controlladorCines {
 
 	    @FXML
 	    private TreeView<String> treeWak;
-	    
+	    /**
+	     * Iniciamos datos Cargados para mostrarlos por pantalla
+	     */
 	    @FXML
 	    void initialize() {
 	    	

@@ -143,7 +143,7 @@ public class controlladorMain implements Initializable{
 		}
     }
     /**
-     * Metodos para abrir la pagina Tutorial
+     * Metodo para abrir la pagina Tutorial
      * @param event
      */
     @FXML
@@ -215,6 +215,12 @@ public class controlladorMain implements Initializable{
 			e.printStackTrace();
 		}
     }
+    /**
+     * Verificamos si los datos son correctos y en caso positivo damos paso al menu
+     * en caso negativo mostramos una alerta
+     * @param event
+     * @throws IOException
+     */
     
     @FXML 
     void inicioSesion(ActionEvent event)throws IOException{
@@ -227,6 +233,14 @@ public class controlladorMain implements Initializable{
        	  alert.showAndWait();
     	}
     }
+    /**
+     * Creamos alerta
+     * @param type
+     * @param title
+     * @param header
+     * @param contextText
+     * @return
+     */
     private Alert crearAlert(AlertType type, String title, String header, String contextText) {
        	Alert auxAlert = new Alert(type);
        	auxAlert.setTitle(title);
