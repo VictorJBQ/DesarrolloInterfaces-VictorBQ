@@ -7,7 +7,11 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
-
+/**
+ * Clase controlladorCine se encarga de abrir el link de esa pagina
+ * @author 34672
+ *@version 1.0
+ */
 public class controlladorCine {
 
 	    @FXML

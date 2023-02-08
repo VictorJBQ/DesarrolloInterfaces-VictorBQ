@@ -13,7 +13,12 @@ import javafx.scene.control.TreeView;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.ComboBoxListCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
-
+/**
+ * Clase controlladorTuto que se encarga de cargar los datos en la ventana
+ * @author victor Bustamante
+ *@version 1.0
+ *
+ */
 public class controlladorTuto {
 	
 	

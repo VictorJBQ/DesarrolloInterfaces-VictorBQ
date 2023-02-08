@@ -29,7 +29,12 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
-
+/**
+ * Clase ControllerEntradas que se encarga de cargar los datos en la tabla y graficos
+ * @author victor Bustamante
+ *@version 1.0
+ *
+ */
 public class ControllerEntradas implements Initializable{
 	@FXML
 	private StackedBarChart<String, Double> StackedBarchart;

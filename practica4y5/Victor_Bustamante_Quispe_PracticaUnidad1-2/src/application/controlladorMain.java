@@ -28,7 +28,12 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-
+/**
+ * Clase controladorMain que se encarga de la navegacion del menu principal
+ * @author victor Bustamante
+ *@version 1.0
+ *
+ */
 public class controlladorMain implements Initializable{
 	
 	   @FXML
