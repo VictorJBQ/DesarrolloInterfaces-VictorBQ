@@ -1,0 +1,30 @@
+﻿<Window x:Class="Proyecto_Moises_VictorB.paginas.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_Moises_VictorB.paginas"
+        mc:Ignorable="d"
+        Title="Juego: Ahorcado" Height="596" Width="875"
+         ResizeMode="NoResize">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" CanExecute="MyCommands_CanExecute" Executed="NewCommand_Executed" />
+        <CommandBinding Command="ApplicationCommands.Close" CanExecute="MyCommands_CanExecute" Executed="CloseCommand_Executed" />
+
+    </Window.CommandBindings>
+    <DockPanel Margin="0,0,0,-6">
+        <Menu DockPanel.Dock="Top" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFFF0404" >
+            <MenuItem Header="_Menu de Opciones" FontFamily="Algerian">
+                <MenuItem Header="New" />
+                <MenuItem Command="ApplicationCommands.New" Header="Open" />
+                <MenuItem Header="Save" />
+                <Separator />
+                <MenuItem Command="ApplicationCommands.Close" Header="Exit" />
+            </MenuItem>
+        </Menu>
+        <Frame Name="myFrame" NavigationUIVisibility="Hidden"/>
+
+
+    </DockPanel>
+</Window>
